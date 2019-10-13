@@ -30,13 +30,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM is an object representation of the HTML elements of a webpage.
+
 2. What is an event?
+
+An event can be triggered by the user action
 
 3. What is an event listener?
 
+
+
 4. Why would we convert a NodeList into an Array?
 
+
+
 5. What is a component?
+
+Components allows us to create reuseable elements in HTML, CSS, and JS.
+
 
 ### Git Set up
 
