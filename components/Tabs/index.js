@@ -15,7 +15,7 @@ axios
 //console.log(response);
   
 response.data.topics.forEach((item) => {
-        let topics = document.querySelector(".topics");
+        const topics = document.querySelector(".topics");
         topics.appendChild(newTopic(item));
     })
 })
