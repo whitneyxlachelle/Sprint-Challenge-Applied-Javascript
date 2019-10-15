@@ -18,7 +18,12 @@ response.data.topics.forEach((item) => {
         const topics = document.querySelector(".topics");
         topics.appendChild(newTopic(item));
     })
+    .catch((err) => {
+          console.log(err);
+        });
+
 })
+
 function newTopic(axiosData){
     const topicsTabs = document.createElement("div");
     topicsTabs.classList.add("tab");

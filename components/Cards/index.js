@@ -31,29 +31,30 @@ axios
     }) 
 })
 
+const container = document.querySelector('.cards-container')
 function cardHolder(article){
     
-    const firstDiv = document.createElement('div');
-    const secondDiv= document.createElement('div');
-    const thirdDiv = document.createElement('div');
-    const fourthDiv = document.createElement('div');
+    const card = document.createElement('div');
+    const headline = document.createElement('div');
+    const author = document.createElement('div');
+    const imgContainer = document.createElement('div');
     const img = document.createElement('img');
     const span = document.createElement('span');
+   
+    card.appendChild(headline);
+    card.appendChild(author);
+    author.appendChild(imgContainer);
+    imgContainer.appendChild(img);
+    author.appendChild(span);
 
-    fourthDiv.appendChild(img);
-    thirdDiv.appendChild(fourthDiv);
-    thirdDiv.appendChild(span);
-    secondDiv.appendChild(thirdDiv);
-    firstDiv.appendChild(secondDiv);
+    card.classList.add('card');
+    headline.classList.add('headline');
+    author.classList.add('author');
+    imgContainer.classList.add('img-container');
 
-    firstDiv.classList.add('card');
-    secondDiv.classList.add('headline');
-    thirdDiv.classList.add('author');
-    fourthDiv.classList.add('img-container');
-
-    secondDiv.textContent = article.headline;
+    headline.textContent = article.headline;
     img.src = article.authorPhoto;
     span.textContent = article.authorName;
 
-    return firstDiv;
+    return card;
 } 
