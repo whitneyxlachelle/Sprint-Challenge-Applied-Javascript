@@ -29,6 +29,9 @@ axios
             cards.appendChild(cardHolder(item));
         })
     }) 
+    .catch((err) => {
+           console.log(err);
+         });
 })
 
 const container = document.querySelector('.cards-container')
